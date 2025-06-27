@@ -3,8 +3,8 @@ import numpy as np
 import joblib
 
 # --- Load Model and Scaler ---
-model = joblib.load(r'C:\Users\loku0\OneDrive\Desktop\Nutrition\model_diet.pkl')
-scaler = joblib.load(r'C:\Users\loku0\OneDrive\Desktop\Nutrition\scaler_diet.pkl')
+model = joblib.load('model_diet.pkl')
+scaler = joblib.load('scaler_diet.pkl')
 
 # --- Helper functions for score encoding ---
 def encode_calorie_score(calories):
@@ -94,7 +94,7 @@ def personalized_tip(goal, fats, sugars, fiber, protein):
 # --- Streamlit UI ---
 st.set_page_config(page_title="Nutrition AI 🚀", page_icon="🥑", layout="centered")
 st.title("🥑 Nutrition AI")
-st.subheader("Smart Food Health Analyzer + Personalized Advice")
+st.subheader("Food Nutrition Analyzer + Personalized Advice")
 
 # --- User Inputs ---
 with st.form("input_form"):
