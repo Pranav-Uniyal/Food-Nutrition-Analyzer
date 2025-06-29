@@ -108,6 +108,7 @@ Goal: `Weight Loss`
 ## Dataset link
 Kaggle-[Dataset Link](https://www.kaggle.com/datasets/sanadalali/food-101-nutritional-information)
 
+---
 ## 👨‍💼 Author
 
 **Pranav Uniyal**
