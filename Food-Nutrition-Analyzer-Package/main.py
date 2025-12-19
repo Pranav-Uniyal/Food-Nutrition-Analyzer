@@ -1,10 +1,16 @@
 import streamlit as st
 import numpy as np
 import joblib
+import os
 
 # --- Load Model and Scaler ---
-model = joblib.load('model_diet.pkl')
-scaler = joblib.load('scaler_diet.pkl')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+model_path = os.path.join(BASE_DIR, "model_diet.pkl")
+scaler_path = os.path.join(BASE_DIR, "scaler_diet.pkl")
+
+model = joblib.load(model_path)
+scaler = joblib.load(scaler_path)
 
 # --- Helper functions for score encoding ---
 def encode_calorie_score(calories):
@@ -163,3 +169,4 @@ if submitted:
 
     except Exception as e:
         st.error(f"⚠️ Error occurred: {e}")
+
