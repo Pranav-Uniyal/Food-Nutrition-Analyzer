@@ -1,4 +1,4 @@
-# 🥑 Nutrition AI —  Food Nutrition Analyzer
+# 🥑 Nutrition AI —  Food Nutrition Analyzer                                                                              |      [Live](https://food-nutrition-analyzer-uya29wtbq7f7amakayaikd.streamlit.app/)
 
 **Nutrition AI** is a Streamlit-based machine learning web application that analyzes the nutritional content of food items and provides:
 
